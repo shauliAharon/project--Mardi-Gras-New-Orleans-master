@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css?family=Henny+Penny|Pattaya|Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.open_screen {
+  min-height: 250px;
+  position: relative;
+  z-index: 1;
+}
+.open_screen .openImg {
+  width: 100%;
+}
+.open_screen article {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  width: 600px;
+}
+@media screen and (max-width: 845px) {
+  .open_screen article {
+    top: 50%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .open_screen article {
+    top: 30%;
+  }
+}
+.open_screen article h3 {
+  color: #f2f2f2;
+  font-family: pattaya;
+  font-size: 2.3em;
+}
+@media screen and (max-width: 840px) {
+  .open_screen article h3 {
+    font-size: 1.3em;
+  }
+}
+@media screen and (max-width: 695px) {
+  .open_screen article h3 {
+    font-size: 1em;
+  }
+}
+.open_screen article p {
+  color: #f2f2f2;
+  font-size: 1.6em;
+  font-family: roboto;
+}
+@media screen and (max-width: 1000px) {
+  .open_screen article p {
+    font-size: 1em;
+  }
+}
+.open_screen article a {
+  color: #9453a6;
+  font-family: roboto;
+}
+.open_screen .openScreenHeadline {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+@media screen and (max-width: 525px) {
+  .open_screen .openScreenHeadline {
+    top: 2%;
+  }
+}
+.open_screen .openScreenHeadline h1 {
+  font-family: "Henny penny";
+  color: #f2f2f2;
+  font-size: 3.6em;
+}
+@media screen and (max-width: 995px) {
+  .open_screen .openScreenHeadline h1 {
+    font-size: 2.6em;
+  }
+}
+@media screen and (max-width: 525px) {
+  .open_screen .openScreenHeadline h1 {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 325px) {
+  .open_screen .openScreenHeadline h1 {
+    font-size: 1em;
+  }
+}
+.open_screen .openScreenHeadline h2 {
+  font-family: pattaya;
+  color: #f2f2f2;
+  font-size: 2em;
+}
+@media screen and (max-width: 840px) {
+  .open_screen .openScreenHeadline h2 {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 525px) {
+  .open_screen .openScreenHeadline h2 {
+    font-size: 1em;
+  }
+}
+
+header {
+  min-height: 70px;
+  color: #f2f2f2;
+  background: #0d0d0d;
+  opacity: 0.9;
+  position: fixed;
+  z-index: 3;
+}
+header .burger {
+  cursor: pointer;
+}
+header .container {
+  min-height: inherit;
+}
+header .container .row {
+  min-height: inherit;
+}
+header .container .row img {
+  height: 60px;
+}
+header .container .row nav {
+  min-height: 60px;
+}
+header .container .row nav a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-size: 1em;
+  padding: 0 12px;
+  line-height: 4;
+  background: #0d0d0d;
+  margin: 1px 0px;
+}
+header .container .row nav a:hover {
+  background: #666666;
+  font-weight: bold;
+}
+header .container .row .search {
+  padding: 0 10px;
+}
+@media screen and (max-width: 1199px) {
+  header #id_header_row {
+    position: relative;
+  }
+  header #id_nav {
+    position: fixed;
+    top: 62px;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    padding: 8px;
+    display: block;
+  }
+  header #id_nav a {
+    display: block;
+    background-color: #0d0d0d;
+    border: 1px solid #f2f2f2;
+  }
+}
+
+.footer {
+  min-height: 200px;
+  background: #0d0d0d;
+  color: #f2f2f2;
+}
+.footer .icons {
+  font-size: 2em;
+}
+.footer .icons a {
+  color: #f2f2f2;
+}
+.footer .copy {
+  margin: 15px;
+}
+.footer .copy h1 {
+  padding: 15px;
+}
+
+.media {
+  width: 100%;
+  background: #0d0d0d;
+  overflow: hidden;
+}
+.media video {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  filter: blur(15px);
+}
+.media .positionAblalut {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.media .positionAblalut .container {
+  min-height: 100px;
+}
+.media .positionAblalut .container .headLine {
+  color: #f2f2f2;
+  font-family: pattaya;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+.media .positionAblalut .container .headLine h1 {
+  font-size: 3em;
+}
+@media screen and (max-width: 840px) {
+  .media .positionAblalut .container .headLine h1 {
+    font-size: 1.6em;
+  }
+}
+.media .positionAblalut .container .slideshow {
+  overflow: hidden;
+  margin: 3% 0 0 0;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
+.media .positionAblalut .container .slideshow figure {
+  position: relative;
+  width: 500%;
+  left: 0;
+  animation: 20s slider infinite;
+}
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+.media .positionAblalut .container .slideshow figure img {
+  width: 20%;
+  float: left;
+}
+.media .positionAblalut .container .mediaText {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.media .positionAblalut .container .mediaText a {
+  color: #f2f2f2;
+  text-shadow: 1px 1px black;
+}
+.media .positionAblalut .container .mediaText a h6 {
+  font-size: 1.6em;
+}
+@media screen and (max-width: 840px) {
+  .media .positionAblalut .container .mediaText a h6 {
+    font-size: 1em;
+  }
+}
+
+.faq {
+  min-height: 100px;
+  background: #9453a6;
+}
+.faq .museumBanner {
+  width: 100%;
+  border: 3px solid #000;
+  margin: 15px 0;
+}
+.faq .primiumBanner {
+  width: 100%;
+  border: 3px solid #000;
+}
+.faq .container .headLine {
+  min-height: inherit;
+}
+.faq .container .headLine h1 {
+  font-family: pattaya;
+  padding-top: 25px;
+  color: #f2f2f2;
+}
+.faq .container .accordion {
+  min-height: inherit;
+}
+
+.contact {
+  background: #f2cc0f;
+}
+.contact .container {
+  padding: 15px;
+}
+.contact .container .contactForm {
+  min-height: inherit;
+  border: 1px solid #999;
+  border-radius: 10px;
+  background: #f2f2f2;
+  padding: 15px;
+}
+.contact .container .contactForm h1 {
+  font-family: pattaya;
+}
+.contact .container .contactForm form label,
+.contact .container .contactForm form input {
+  width: 100%;
+  border-radius: 5px;
+}
+.contact .container .contactForm form textarea {
+  width: 100%;
+  border-radius: 5px;
+  min-height: 100px;
+}
+.contact .container .contactForm .contactImg img {
+  padding: 15px;
+}
+
+.about_us {
+  min-height: 250px;
+  background: #f2cc0f;
+}
+.about_us .sheratonBanner {
+  width: 100%;
+  border: 3px solid #000;
+  margin: 15px 0;
+}
+.about_us .bannerVerticalImg {
+  width: 100%;
+}
+.about_us .ritzBanner {
+  width: 100%;
+  border: 3px solid #000;
+  margin: 15px 0;
+}
+.about_us .aboutText {
+  padding: 25px;
+}
+.about_us .aboutText a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+.about_us .aboutText a h1 {
+  font-family: pattaya;
+}
+.about_us .aboutText a p {
+  font-family: roboto;
+}
+.about_us .aboutText a h6 {
+  color: #9453a6;
+}
+.about_us .aboutText a h6:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.about_us .aboutImg {
+  padding: 25px;
+}
+.about_us .aboutImg .mayorPic {
+  width: 100%;
+  padding: 15px;
+}
+.about_us .aboutImg p {
+  padding: 5px 15px;
+  color: #0d0d0d;
+  font-family: roboto;
+  font-size: 1em;
+  text-align: left;
+}
+.about_us .aboutImg a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.mediaGallery {
+  background: #9453a6;
+}
+.mediaGallery .container .row {
+  margin-top: 100px;
+}
+.mediaGallery .container .row .headline {
+  font-family: pattaya;
+}
+.mediaGallery .container .row .mediaVideo {
+  width: 100%;
+  margin: 15px 0px;
+  border: 3px solid #000;
+}
+.mediaGallery .container .row .img_container .mediaImg {
+  width: 100%;
+  margin-top: 15px;
+  border: 3px solid #000;
+  transition: 0.5s;
+}
+.mediaGallery .container .row .img_container .mediaImg:hover {
+  transform: scale(1.1);
+}
+
+.aboutMardi {
+  background-image: url(../images/about/5.jpg);
+  background-size: cover;
+}
+.aboutMardi .container {
+  background: #f2cc0f;
+  border-radius: 10px;
+}
+.aboutMardi .container .row .headline h1 {
+  font-family: pattaya;
+  margin-top: 85px;
+}
+.aboutMardi .container .row p {
+  text-align: left;
+  text-indent: 25px;
+  padding: 0 25px;
+}
+.aboutMardi .container .row p span {
+  font-weight: bold;
+}
+.aboutMardi .container .row .aboutMardiImg {
+  width: 100%;
+  padding: 25px 25px;
+}/*# sourceMappingURL=main.css.map */

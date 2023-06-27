@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap link css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!--link to font awesome -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icon link -->
+    <link rel="shortcut icon" href="../images/mardiGrasLogo.png" />
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- js link -->
+
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+    <script defer src="../js/header.js"></script>
+    <script src="../js/form.js"></script>
+    <title>About Mardi Gras</title>
+</head>
+
+<body>
+    <!------------------- header & navBar -------------------->
+    <header class="container-fluid">
+        <div class="container">
+            <div id="id_header_row" class="row justify-content-between">
+
+                <div class="center">
+                    <a href="../index.html"><img src="../images/mardiGrasLogo.png" alt="" /></a>
+                </div>
+
+                <nav id="id_nav" class="center d-none d-xl-flex">
+                    <a id="id_nav_items" href="../index.html">HOME</a>
+                    <a id="id_nav_items" href="aboutMardiGtas.html">ABOUT</a>
+
+                    <a id="id_nav_items" href="mediaGallery.html">MEDIA</a>
+                    <a id="id_nav_items" href="fAQ.html">FAQ</a>
+
+
+                </nav>
+
+                <div class="burger d-xl-none h2 center" onclick="onBurgerClick()">
+                    &#9776;
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!------------------------ main ------------------------>
+
+    <!-------------------------- contact ------------------------->
+
+    <div style="padding-top: 90px;" id="id_contact" class="contact container-fluid">
+        <div class="container">
+            <div class="contactForm row">
+
+                <div class="headLine col-12">
+                    <h1 class="text-center">Contact Us</h1>
+                    <hr>
+                </div>
+
+                <form id="id_form" class="col-md-6" action="#">
+
+                    <label for="">First name</label>
+                    <br>
+                    <input id="id_first" type="text" placeholder="Enter Your First name" />
+                    <span id="name"></span>
+                    <br><br>
+
+                    <label for="">Last name</label>
+                    <br>
+                    <input id="id_last" type="text" placeholder="Enter Your Last name" />
+                    <span id="last"></span>
+                    <br><br>
+
+                    <label for="">email</label>
+                    <br>
+                    <input id="id_mail" type="email" placeholder="Enter Your Email" />
+                    <span id="mail"></span>
+                    <br> <br>
+
+                    <label for="">Massege</label>
+                    <br>
+                    <textarea id="id_massage"
+                        placeholder="For any question please write a message and we will be happy to answer as soon as possible"></textarea>
+                    <span id="mas"></span>
+                    <br><br>
+                    <button id="id_form_btn" class="form_btn1" onClick="onSubClick(event)">Submit</button>
+                    <br>
+                    <span id="subSpan"></span>
+                </form>
+
+                <div class="contactImg col-md-6">
+                    <img src="../images/mardi-gras-logo.png" alt="" width="100%">
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!------------------------ footer ------------------------>
+
+    <div class="footer container-fluid d-flex">
+        <div class="container display-5 text-center center">
+            <div class="">
+                <div class="icons col-12">
+                    <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="copy col-12">
+                    <h1">Copyright © 1996-2023 MardiGrasNewOrleans.com</h1">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

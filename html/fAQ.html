@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap link css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!--link to font awesome -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- icon link -->
+    <link rel="shortcut icon" href="../images/mardiGrasLogo.png" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <!-- js link -->
+    <script defer src="../js/main.js"></script>
+    <script src="../js/openSceen.js"></script>
+    <script src="../js/media.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/header.js"></script>
+
+    <title>Mardi Gras FAQ</title>
+
+</head>
+
+<body onload="init()">
+    <header class="container-fluid">
+        <div class="container">
+            <div id="id_header_row" class="row justify-content-between">
+
+                <div class="center">
+                    <a href="../index.html"><img src="../images/mardiGrasLogo.png" alt="" /></a>
+                </div>
+
+                <nav id="id_nav" class="center d-none d-xl-flex">
+                    <a id="id_nav_items" href="../index.html">HOME</a>
+                    <a id="id_nav_items" href="aboutMardiGtas.html">ABOUT</a>
+                    <a id="id_nav_items" href="mediaGallery.html">MEDIA</a>
+
+
+                    <a id="id_nav_items" href="contactUS.html">CONTACT</a>
+                </nav>
+
+                <div class="burger d-xl-none h2 center" onclick="onBurgerClick()">
+                    &#9776;
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <div style="padding-top: 90px; padding-bottom: 60px;" id="id_faq" class="faq container-fluid d-flex ">
+
+        <!-- באנר אופקי -->
+        <div class="d-none d-xl-flex col-xl-2 center">
+            <a href="http://www.museumofdeath.net/" target="_blank"><img class="museumBanner"
+                    src="../images/Banners/museumOfDeath1.jpg" alt="" /></a>
+        </div>
+
+        <!-- שאלות ותשובות -->
+        <div class="container col-xl-8">
+
+            <div class="row">
+
+                <div class="col-12 headLine text-center">
+                    <h1>FAQ</h1>
+                </div>
+
+                <div class="accordion col-12" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Do I need tickets?
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                There is no need for tickets to see a parade...all of them are FREE!! That is why it is
+                                called "The Greatest Free Show
+                                on Earth!". You only get tickets if you want to sit down on stands as the parades pass.!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is the significance of the Mardi Gras colors, and where did they come from?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Rex, the King of Carnival, selected the Mardi Gras colors and assigned meaning to them
+                                in 1892. Purple stands for
+                                justice, green for faith, and gold for power.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Who organizes and pays for Mardi Gras?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Mardi Gras parade krewes are private, non-profit organizations whose members get
+                                together year round to plan their
+                                parade's theme, costumes and unique throws. Each Carnival Club, as they are known, is
+                                individually funded by its
+                                members. They support their krewe through dues, sales of krewe-related merchandise to
+                                their members, and fundraising.
+                                Mardi Gras parade krewes sometimes have corporate sponsors.
+
+                                The city of New Orleans is not involved in coordinating Mardi Gras parades; their only
+                                involvement is to issue parade
+                                permits to each individual Mardi Gras krewe that schedules and coordinates its own
+                                parade
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="d-none d-xl-flex col-xl-2 center">
+            <a href="https://walk-ons.com/" target="_blank"><img class="museumBanner"
+                    src="../images/Banners/walkOn1.jpg" alt="" /></a>
+        </div>
+
+    </div>
+
+
+
+    <!----------------------------- footer ------------------------------->
+
+    <div class="footer container-fluid d-flex">
+        <div class="container display-5 text-center center">
+            <div class="">
+                <div class="icons col-12">
+                    <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="copy col-12">
+                    <h1">Copyright © 1996-2023 MardiGrasNewOrleans.com</h1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstap link Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

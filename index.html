@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap link css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+    <!--link to font awesome -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- icon link -->
+    <link rel="shortcut icon" href="images/mardiGrasLogo.png" />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- js link -->
+    <script defer src="js/main.js"></script>
+    <script src="js/openSceen.js"></script>
+    <script src="js/media.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/header.js"></script>
+
+    <title>Mardi Gras New Orleans</title>
+
+</head>
+
+<body onload="init()">
+    <!------------------- header & navBar -------------------->
+    <header class="container-fluid">
+        <div class="container">
+            <div id="id_header_row" class="row justify-content-between">
+
+                <div class="center">
+                    <a href="/"><img src="images/mardiGrasLogo.png" alt="Logo" /></a>
+                </div>
+
+                <nav id="id_nav" class="center d-none d-xl-flex">
+
+                    <a id="id_nav_items" href="html/aboutMardiGtas.html">ABOUT</a>
+                    <a id="id_nav_items" href="html/mediaGallery.html">MEDIA</a>
+                    <a id="id_nav_items" href="html/fAQ.html">FAQ</a>
+                    <a id="id_nav_items" href="html/contactUS.html">CONTACT</a>
+                </nav>
+
+                <div class="burger d-xl-none h2 center" onclick="onBurgerClick()">
+                    &#9776;
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-------------------- open screen ----------------------->
+    <section id="openScreen" class="open_screen container-fluid">
+
+        <img id="openSceenImg" class="openImg center" src="images/openScreen/1.jpg" alt="" />
+
+        <article class="container">
+            <h3 id="openScreenH3">Mardi Gras New Orleans Costume parade</h3>
+            <p id="openScreenP">
+                The parades in New Orleans are organized by social clubs known as
+                krewes; most follow the same parade schedule and route each year.
+            </p>
+            <a href="#id_attraction">Click hear</a>
+        </article>
+
+        <div class="openScreenHeadline container">
+            <h1>Mardi Gras New Orleans</h1>
+            <h2>come and enjoy all the attractions</h2>
+        </div>
+    </section>
+
+
+
+
+
+    <!--------------------- attractions -------------------->
+    <div id="id_attraction" class="attractions container-fluid d-flex">
+
+        <div class="col-xl-2 center d-none d-xl-flex">
+            <a href="https://www.lcm.org/"><img class="aceHotelBanner" src="images/attractions/LCM1.png" alt="" /></a>
+        </div>
+
+        <div class="container col-xl-8">
+            <div class="row">
+
+                <div class="headLine col-lg-12">
+                    <h1>ATTRACTIONS</h1>
+                    <h2></h2>
+                </div>
+
+                <div class="attraction col-lg-6">
+                    <a href="https://www.steamboatnatchez.com/riverboat-city-of-new-orleans" target="_blank">
+                        <img class="attPic" src="images/attractions/bolt.jpg" alt="" />
+                        <article>
+                            <h3>RIVERBOAT CITY OF NEW ORLEANS</h3>
+                            <p>
+                                thCome enjoy a live jazz band, authentic New Orleans cuisine, a daily second line
+                                parade, a calliope concert, king cake and more.
+                            </p>
+                            <h6>Learn More</h6>
+                        </article>
+                    </a>
+                </div>
+
+
+                <div class="attraction col-lg-6">
+                    <a href="https://www.mardigrasneworleans.com/planning/attractions/mardi-gras-world" target="_blank">
+                        <img class="attPic" src="images/attractions/muskParades2.jpg" alt="" />
+                        <article>
+                            <h3>Mardi Gras World</h3>
+                            <p>
+                                look at New Orleans Mardi Gras, and that’s the Mardi Gras World tour. Mardi Gras World
+                                gives you an authentic Mardi Gras
+                                experience all year round.
+                            </p>
+                            <h6>Learn More</h6>
+                        </article>
+                    </a>
+                </div>
+
+                <div class="attraction col-lg-6">
+                    <a href="https://www.neworleans.com/things-to-do/cultural-arts/museums/mardi-gras-museums/"
+                        target="_blank">
+                        <img class="attPic" src="images/attractions/NOTMC6.jpg" alt="" />
+
+                        <article>
+                            <h3>Museums</h3>
+                            <p>
+                                you can channel the festivities year round with a visit to one of these Mardi
+                                Gras-centric museums and workshops, places
+                                where floats are built, Mardi Gras Indians are celebrated and lavish costumes are on
+                                perpetual parade.
+                            </p>
+                            <h6>Learn More</h6>
+                        </article>
+                    </a>
+                </div>
+
+                <div class="attraction col-lg-6">
+                    <a href="https://www.getyourguide.com/-l370/?cmp=ga&campaign_id=6654625675&adgroup_id=79053088797&target_id=kwd-306128350787&loc_physical_ms=1008004&match_type=e&ad_id=395196049845&keyword=new%20orleans%20outdoor&ad_position=&feed_item_id=&placement=&partner_id=CD951&gclid=EAIaIQobChMIs-Lq2uCL6AIVUIGyCh1-6QD5EAAYAiAAEgKdNvD_BwE"
+                        target="_blank">
+                        <img class="attPic" src="images/attractions/988.jpg" alt="" />
+
+                        <article>
+                            <h3>Out Doors</h3>
+                            <p>
+                                Things to do in
+                                New Orleans
+                                Be sure not to miss the spectacular jazz, cajun-tastic cuisine, and bustling French
+                                Quarter in the Big Easy. </p>
+                            <h6>Learn More</h6>
+                        </article>
+                    </a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="col-lg-2 center d-none d-xl-flex">
+            <a href="https://www.bloodymarystours.com/" target="_blank"><img class="hauntedBanner"
+                    src="images/attractions/HauntedMuseum.jpg" alt="" /></a>
+        </div>
+    </div>
+
+    <!-- ----------------------- schedule ----------------------- -->
+
+    <div id="id_schedule" class="schedule container-fluid">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="headLine col-lg-8 center">
+                    <a href="https://www.mardigrasneworleans.com/" target="_blank">
+                        <div>
+                            <h1>Parade Schedule</h1>
+                            <p>
+                                Check out this years lineup for Mardi Gras parades and krewes.
+                            </p>
+                            <h6 class="text-center text-lg-left">Click Hear For More Info</h6>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="scheduleImg col-lg-2 center">
+                    <a href=""><img class="calenderIcon" src="images/calender.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-------------------- Advertisements ---------------------->
+    <div id="id_accomodation" class="accomodation container-fluid d-flex ">
+
+        <div class="d-none d-xl-flex col-xl-2 center">
+            <a href="https://www.premiumparking.com/P0402" target="_blank"><img class="primiumBanner"
+                    src="images/Banners/PRIMIUM1.jpg" alt="" /></a>
+        </div>
+
+        <div class="container col-xl-8">
+            <div class="row d-flex">
+
+                <div class="headLine col-lg-12">
+                    <h1>Advertisements</h1>
+                    <h2></h2>
+                </div>
+
+                <!-- Haunted Museum -->
+
+
+
+                <div class="accomodation col-md-6 col-lg-4 col-xl-3 card text-center">
+
+                    <img src="/images/attractions/HauntedMuseum.jpg" class="card-img-top" style="padding-top: 15px;"
+                        alt="Haunted Museum">
+                    <div class="card-body ">
+                        <h5 class="card-title">Tour the Haunted Museum in Las Vegas </h5>
+                        <hr>
+                        <p class="card-text" style="text-align: left;">Paranormal museum with 30 spooky rooms
+                            &
+                            winding corridors in a reputedly
+                            haunted 1938 mansion.
+                        </p>
+                        <a href="https://thehauntedmuseum.com/" target="_blank" class=" btn-primary ">Learn More</a>
+                    </div>
+
+                </div>
+
+
+
+                <!-- Museum of Death New Orleans -->
+
+                <div class="accomodation col-md-6 col-lg-4 col-xl-3 card text-center">
+                    <img src="./images/Banners/museumOfDeath2.jpg" style="padding-top: 15px;" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Museum of Death New Orleans</h5>
+                        <hr>
+                        <p class="card-text" style="text-align: left;">The museum displays a wide variety of art and
+                            artifacts surrounding the subject of death. Baby coffins are in one
+                            section, letters and artwork from various serial killers in another..</p>
+                        <a href="http://www.museumofdeath.net/" target="_blank" class="btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- When you make a child's potential visible, wonderful things happen -->
+                <div class="accomodation col-md-6 col-lg-4 col-xl-3 card text-center">
+                    <img src="images/Banners/LCM_Color-Logo_Horizontal.png" style="padding-top: 15px;"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Louisiana Children's Museum</h5>
+                        <hr>
+                        <p class="card-text" style="text-align: center;">Being a member of LCM means you can
+                            come play
+                            all year long. Wednesday?
+                            Come play! Friday the 13th? Very spooky, but you
+                            can still come play. Check out our membership page and renew now so you don't miss
+                            out on
+                            our holiday programming!.</p>
+                        <a href="https://lcm.org/" target="_blank" class=" btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- The Ritz-Carlton  -->
+
+                <div class="accomodation col-md-6 col-lg-4 col-xl-3 card text-center">
+                    <img src="https://s7d2.scene7.com/is/image/ritzcarlton/ritz-carlton-primary-black?$LargeViewport25pct$"
+                        style="padding-top: 15px;" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Ritz-Carlton</h5>
+                        <hr>
+                        <p class="card-text" style="text-align: center;">Rich in history and personality, New
+                            Orleans is
+                            unlike any other US city.
+                            Honoring its
+                            spirit and elegance, The
+                            Ritz-Carlton, New Orleans invites visitors to its French Quarter retreat, set within
+                            a 1908
+                            Beaux Arts building.</p>
+                        <a href="https://www.ritzcarlton.com/en/hotels/new-orleans?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+                            target="_blank" class=" btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="d-none d-xl-flex col-xl-2 center">
+            <a href="https://www.acehotel.com/neworleans/" target="_blank"><img class="primiumBanner"
+                    src="images/Banners/ace1.jpg" alt="" /></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-------------------------- contact ------------------------->
+
+    <div id="id_contact" class="contact container-fluid">
+        <div class="container">
+            <div class="contactForm row">
+
+                <div class="headLine col-12">
+                    <h1 class="text-center">Contact Us</h1>
+                    <hr>
+                </div>
+
+                <form id="id_form" class="col-md-6" action="#">
+
+                    <label for="">First name</label>
+                    <br />
+                    <input id="id_first" type="text" placeholder="Enter Your First name" />
+                    <span id="name"></span>
+                    <br />
+
+                    <label for="">Last name</label>
+                    <br />
+                    <input id="id_last" type="text" placeholder="Enter Your Last name" />
+                    <span id="last"></span>
+                    <br />
+
+                    <label for="">email</label>
+                    <br />
+                    <input id="id_mail" type="email" placeholder="Enter Your Email" />
+                    <span id="mail"></span>
+                    <br />
+
+                    <label for="">Massege</label>
+                    <br />
+                    <textarea id="id_massage"
+                        placeholder="For any question please write a message and we will be happy to answer as soon as possible"></textarea>
+                    <span id="mas"></span>
+                    <br><br><br>
+                    <button id="id_form_btn" onClick="onSubClick(event)">Submit</button>
+                    <br>
+                    <span id="subSpan"></span>
+                </form>
+
+                <div class="contactImg col-md-6">
+                    <img src="images/mardi-gras-logo.png" alt="" width="90%">
+                </div>
+
+            </div>
+
+            <div class="contactImg">
+                <img src="" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- footer ------------------------------->
+
+    <div class="footer container-fluid d-flex">
+        <div class="container display-5 text-center center">
+            <div class="">
+                <div class="icons col-12">
+                    <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="copy col-12">
+                    <h1">Copyright © 1996-2023 MardiGrasNewOrleans.com</h1">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootstap link Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
